@@ -1,12 +1,6 @@
 version: 0.1
 
 phases:
-  install:
-    commands:
-      # - install nodejs
-      - echo Installing nodejs 14...
-      - curl -sL https://deb.nodesource.com/setup_14.x | bash -
-      - apt install -y nodejs
   pre_build:
     commands:
       # - install dependencies
@@ -21,4 +15,4 @@ artifacts:
   files:
     - "**/*"
   discard-paths: no
-  base-directory: dist
+  base-directory: build
