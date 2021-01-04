@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.counter-button {
+  margin-right: 1rem;
+  background: rgb(86, 84, 86);
+  padding: 0.5rem;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  cursor: pointer;
+}
+
+.counter-button:last-child {
+  margin: 0;
+}
