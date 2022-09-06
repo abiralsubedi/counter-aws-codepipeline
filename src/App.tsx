@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./App.css";
 
-const countAmount = 2
+const countAmount = 1
 
 function App() {
   const [counter, setCounter] = useState(0);
