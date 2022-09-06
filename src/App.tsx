@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import "./App.css";
 
+const countAmount = 2
+
 function App() {
   const [counter, setCounter] = useState(0);
   return (
@@ -12,16 +14,16 @@ function App() {
         </div>
         <div>
           <button
-            onClick={() => setCounter(prev => prev + 1)}
+            onClick={() => setCounter(prev => prev + countAmount)}
             className="counter-button"
           >
-            +1
+            +{countAmount}
           </button>
           <button
-            onClick={() => setCounter(prev => prev - 1)}
+            onClick={() => setCounter(prev => prev - countAmount)}
             className="counter-button"
           >
-            - 1
+            - {countAmount}
           </button>
         </div>
       </div>
